@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+  <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+
+  
+  <script>
+function openNav() {
+    document.getElementById("nav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+	document.getElementById("main").style.width= "80%";
+}
+
+function closeNav() {
+    document.getElementById("nav").style.width = "0px";
+    document.getElementById("main").style.marginLeft= "0px";
+	document.getElementById("main").style.width= "100%";
+}
+</script>
+  <style>
+	.main-head-nav{
+		padding-top:15px;
+	}
+	.main-head-2{
+		float:right;
+		padding-top:15px;
+	)
+  </style>
+</head>
+<body>
+	
+	<div id="content">
+		<div id="main-header">
+			<div class="col-lg-8 col-md-8 col-sm-2 col-xs-2">
+					
+					<div class="col-md-4 col-sm-12 col-xs-12 main-head-nav2">
+						<center><img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/3d-transparent-glass-icons-symbols-shapes/016942-3d-transparent-glass-icon-symbols-shapes-shapes-circle-clear.png" 
+						beight="30" width="40"></center>
+						
+					</div>
+					<div class="col-md-2 col-sm-6 col-xs-6 main-head-nav">
+						<i class="fa fa-users" aria-hidden="true" style="color:#8492CF;"></i><span class="main-head-text">People</span>
+					</div>
+					<div class="col-md-2 col-sm-6 col-xs-6 main-head-nav">
+						<i class="fa fa-book" aria-hidden="true" style="color:#8492CF;"></i><span class="main-head-text">APIs</span>
+					</div>
+					<div class="col-md-2 col-sm-6 col-xs-6 main-head-nav">
+						<i class="fa fa-gear" aria-hidden="true" style="color:#8492CF;"></i><span class="main-head-text">Settings</span>
+					</div>
+					<div class="col-md-2 col-sm-6 col-xs-6 main-head-nav">
+						<i class="fa fa-question" aria-hidden="true" style="color:#8492CF;"></i><span class="main-head-text"></span>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-md-push-2 col-sm-2 col-xs-2 main-head-nav">
+					<span class="acme">Acme</span>
+					<img class="img_pic2" src="img/user1-128x128.jpg"/>
+				</div>
+
+		</div>
+		<div id="nav" class="col-xs-12 col-sm-4 col-md-2 col-lg-2 nopadding">
+			
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+						<span onclick="closeNav();" class="close-btn" styl="color:white;font-size:28px;">&times;</span>
+			</div>
+			
+			<div id="nav-header">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br><br><br>
+			<span class="nav-text">MEMBERS</span>
+			</div>
+			<ul>
+				<a class="nav-text" href="#"><li class="active">&nbsp;&nbsp;&nbsp;All <span class="badge" style="background-color:#8492CF;float:right;">14</span></li></a>
+				<a class="nav-text" href="#"><li>&nbsp;&nbsp;&nbsp;Administrators<span class="badge" style="float:right;">15</span></li></a>
+				<a class="nav-text" href="#"><li>&nbsp;&nbsp;&nbsp;Members<span class="badge" style="float:right;">3</span></li></a>
+				<a class="nav-text" href="#"><li>&nbsp;&nbsp;&nbsp;Invitations<span class="badge" style="float:right;">1</span></li></a>
+			</ul>
+		</div>
+	
+		
+			
+		<div id="main" class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+
+			<div id="stats">
+					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 stats_box">
+						<div class="col-md-6">
+							<i class="fa fa-bars icon" aria-hidden="true"></i>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-md-push-3">
+							<i class="fa fa-star icon" aria-hidden="true"></i>
+						</div>
+						<div id="profile_pic">
+							<img class="img_pic" src="img/user1-128x128.jpg" />
+						</div>
+						<div class="col-md-12">
+							<center><span class="card-text">John doe</span></center>
+							<p><span class="card-email">johndoe@fintech.com</span></p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 stats_box">
+						<div class="col-md-6">
+							<i class="fa fa-bars icon" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-6 col-md-push-3">
+							<i class="fa fa-star icon" aria-hidden="true"></i>
+						</div>
+						<div id="profile_pic">
+							<center><img class="img_pic" src="img/user1-128x128.jpg" /></center>
+						</div>
+						<div class="col-md-12">
+							<center><span class="card-text">John doe</span></center>
+							<p><span class="card-email">johndoe@fintech.com</span></p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 stats_box">
+						<div class="col-md-6">
+							<i class="fa fa-bars icon" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-6 col-md-push-3">
+							<i class="fa fa-star icon" aria-hidden="true"></i>
+						</div>
+						
+						<div id="profile_pic">
+							<center><img class="img_pic" src="img/user1-128x128.jpg" /></center>
+						</div>
+						<div class="col-md-12">
+							<center><span class="card-text">John doe</span></center>
+							<p><span class="card-email">johndoe@fintech.com</span></p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 stats_box">
+						<div class="col-md-6">
+							<i class="fa fa-bars icon" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-6 col-md-push-3">
+							<i class="fa fa-star icon" aria-hidden="true"></i>
+						</div>
+						<div id="profile_pic">
+							<center><img class="img_pic" src="img/user1-128x128.jpg" /></center>
+						</div>
+						<div class="col-md-12">
+							<center><span class="card-text">John doe</span></center>
+							<p><span class="card-email">johndoe@fintech.com</span></p>
+						</div>
+					</div>
+	
+			</div>
+			
+			<div id="stats2">
+					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 stats_box">
+						<div class="col-md-6">
+							<i class="fa fa-bars icon" aria-hidden="true"></i>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-md-push-3">
+							<i class="fa fa-star icon" aria-hidden="true"></i>
+						</div>
+						<div id="profile_pic">
+							<img class="img_pic" src="img/user1-128x128.jpg" />
+						</div>
+						<div class="col-md-12">
+							<center><span class="card-text">John doe</span></center>
+							<p><span class="card-email">johndoe@fintech.com</span></p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 stats_box">
+						<div class="col-md-6">
+							<i class="fa fa-bars icon" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-6 col-md-push-3">
+							<i class="fa fa-star icon" aria-hidden="true"></i>
+						</div>
+						<div id="profile_pic">
+							<center><img class="img_pic" src="img/user1-128x128.jpg" /></center>
+						</div>
+						<div class="col-md-12">
+							<center><span class="card-text">John doe</span></center>
+							<p><span class="card-email">johndoe@fintech.com</span></p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 stats_box">
+						<div class="col-md-6">
+							<i class="fa fa-bars icon" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-6 col-md-push-3">
+							<i class="fa fa-star icon" aria-hidden="true"></i>
+						</div>
+						
+						<div id="profile_pic">
+							<center><img class="img_pic" src="img/user1-128x128.jpg" /></center>
+						</div>
+						<div class="col-md-12">
+							<center><span class="card-text">John doe</span></center>
+							<p><span class="card-email">johndoe@fintech.com</span></p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 stats_box">
+						<div class="col-md-6">
+							<i class="fa fa-bars icon" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-6 col-md-push-3">
+							<i class="fa fa-star icon" aria-hidden="true"></i>
+						</div>
+						<div id="profile_pic">
+							<center><img class="img_pic" src="img/user1-128x128.jpg" /></center>
+						</div>
+						<div class="col-md-12">
+							<center><span class="card-text">John doe</span></center>
+							<p><span class="card-email">johndoe@fintech.com</span></p>
+						</div>
+					</div>
+	
+			</div>
+			
+			<div id="stats2">
+					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 stats_box">
+						<div class="col-md-6">
+							<i class="fa fa-bars icon" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-6 col-md-push-3">
+							<i class="fa fa-star icon" aria-hidden="true"></i>
+						</div>
+						<div id="profile_pic">
+							<center><img class="img_pic" src="img/user1-128x128.jpg" /></center>
+						</div>
+						<div class="col-md-12">
+							<center><span class="card-text">John doe</span></center>
+							<p><span class="card-email">johndoe@fintech.com</span></p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 stats_box">
+						<div class="col-md-6">
+							<i class="fa fa-bars icon" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-6 col-md-push-3">
+							<i class="fa fa-star icon" aria-hidden="true"></i>
+						</div>
+						<div id="profile_pic">
+							<center><img class="img_pic" src="img/user1-128x128.jpg" /></center>
+						</div>
+						<div class="col-md-12">
+							<center><span class="card-text">John doe</span></center>
+							<p><span class="card-email">johndoe@fintech.com</span></p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 stats_box">
+						<div class="col-md-6">
+							<i class="fa fa-bars icon" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-6 col-md-push-3">
+							<i class="fa fa-star icon" aria-hidden="true"></i>
+						</div>
+						
+						<div id="profile_pic">
+							<center><img class="img_pic" src="img/user1-128x128.jpg" /></center>
+						</div>
+						<div class="col-md-12">
+							<center><span class="card-text">John doe</span></center>
+							<p><span class="card-email">johndoe@fintech.com</span></p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 stats_box">
+						<div class="col-md-6">
+							<i class="fa fa-bars icon" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-6 col-md-push-3">
+							<i class="fa fa-star icon" aria-hidden="true"></i>
+						</div>
+						<div id="profile_pic">
+							<center><img class="img_pic" src="img/user1-128x128.jpg" /></center>
+						</div>
+						<div class="col-md-12">
+							<center><span class="card-text">John doe</span></center>
+							<p><span class="card-email">johndoe@fintech.com</span></p>
+						</div>
+					</div>
+	
+			</div>
+			
+		
+		
+	
+	</div>
+	
+
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/fastclick/fastclick.js"></script>
+<script src="dist/js/app.min.js"></script>
+<script src="plugins/sparkline/jquery.sparkline.min.js"></script>
+<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="plugins/chartjs/Chart.min.js"></script>
+<script src="dist/js/pages/dashboard2.js"></script>
+<script src="dist/js/demo.js"></script>
+
+</body>
+</html>

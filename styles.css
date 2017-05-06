@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Ubuntu');
+
+*{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+
+
+@media only screen and (max-width: 420px){
+
+.closebtn{
+	display:block;
+	font-size: 42px;
+	float:left;
+	color:white;
+}
+
+
+#nav{
+height:100%;
+width:0px;
+background-color:#092338;
+z-index:1;
+bottom:5px;
+position:fixed;
+float:left;
+transition: 0.5s;
+display:block;
+overflow-x:hidden;
+}
+
+.hamburger{
+width:50px;
+text-align:center;
+font-size:18px;
+font-weight:bold;
+color:white;
+cursor:pointer;
+padding:12px;
+margin-left:30px;
+visibility:visible;
+}
+
+.main-head-nav{
+	display:none;
+	border:0px;
+}
+
+
+div#main{
+position:relative;
+margn:0px auto;
+padding:30px;
+width:100%;
+margin-left:0px;
+}
+
+div.stats_box{
+width:100%;
+display:block;
+margin:5px 0px 0px 0px;
+}
+
+div#profile_name{
+width:100%;
+padding:10px;
+}
+
+div#header{
+text-align:center;
+font-size: 24px;
+font-weight:bold;
+color:white;
+}
+
+span.header-text{
+font-size:28px;
+font-weight:bold;
+margin-left:30%;
+text-align:center;
+}
+
+span.header-text2{
+margin-left:25%;
+
+}
+
+}
+
+@media only screen and (max-width: 600px){
+
+.closebtn{
+	display:block;
+	font-size: 42px;
+	float:left;
+	color:white;
+}
+
+
+div#main{
+position:relative;
+left:0px;
+padding:10px;
+width:100%;
+}
+
+.hamburger{
+visibility:hidden;width:50px;
+text-align:center;
+font-size:18px;
+font-weight:bold;
+color:white;
+cursor:pointer;
+padding:12px;
+margin-left:30px;
+visibility:visible;}
+
+div#profile_name{
+width:100%;
+padding:10px;
+}
+
+div#header{
+text-align:center;
+font-size: 24px;
+font-weight:bold;
+color:white;
+}
+
+span.header-text{
+font-size:28px;
+font-weight:bold;
+margin-left:30%;
+text-align:center;
+}
+
+.box_content{
+	float:left;
+	padding:10px;
+}
+
+.box_content2{
+	float:right;
+	padding:10px;
+}
+
+span.header-text2{
+margin-left:25%;
+
+}
+
+}
+
+body{
+font-family: 'Ubuntu', sans-serif;
+}
+
+#nav-header{
+background-color:#393F57;
+padding:15px;
+font-size:1em;
+}
+
+#main-header{
+background-color:#656B85;
+padding:0px;
+margin:0px auto;
+height:80px;
+position:fixed;
+left:0;
+right:0;
+top:0;
+bottom:0;
+z-index:1;
+}
+
+.main-head-nav{
+	color:white;
+	margin-top:15px;
+}
+
+.main-head-text{
+		padding-left:15px;
+}
+
+.nav-list{
+	color:grey;
+}
+
+
+.main-head-nav2{
+	border-right:1px solid #D9D9D9;
+	margin-top:15px;
+	
+}
+
+
+.main-head-2{
+	color:white;
+}
+
+div#header{
+text-align:center;
+font-size: 24px;
+font-weight:bold;
+color:white;
+}
+
+span.header-text{
+font-size:28px;
+font-weight:bold;
+
+text-align:center;
+}
+
+span.header-text2{
+margin-left:50px;
+
+}
+
+#content{
+display:inline-block;
+width:100%;
+margin:0px auto;
+background-color:#ecf0f5;
+}
+
+#profile_box{
+width:100%;
+height:auto;
+padding:30px 0px 30px 0px;
+background-image:url("img/photo1.png");
+text-align:center;
+}
+
+#black_bg{
+width:100%;
+background-color:black;
+}
+
+#profile_name{
+color:white;
+width:30%;
+margin:0px auto;
+margin-bottom:5px;
+margin-top:5px;
+text-align:center;
+}
+
+.img_pic{
+border-radius:50%;
+border:3px solid #fff;
+width:90px;
+height:auto;
+vertical-align:middle;
+}
+
+.img_pic2{
+border-radius:50%;
+border:3px solid #fff;
+width:30px;
+height:auto;
+vertical-align:middle;
+}
+
+.info{
+color:white;
+width:60%;
+}
+
+#profile_pic{
+padding:10px;
+margin-top:40px;
+}
+
+.icon{
+	padding:5px 0px 0px 0px;
+}
+
+
+#nav{
+height:100%;
+background-color:#393F57;
+z-index:1;
+bottom:0;
+top:80px;
+left:0;
+right:0;
+position:fixed;
+float:left;
+transition: 0.5s;
+display:block;
+overflow-x:hidden;
+}
+
+.card-email{
+	font-size:12px;
+	text-align:center;
+}
+
+.nav-text{
+	color:#CCCDCF;
+}
+
+.nav-text:hover{
+	color:white;
+}
+
+
+#nav ul{
+width:100%;
+padding:0px;
+}
+
+.closebtn {
+	display:none;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+#nav ul li{
+list-style:none;
+width:100%;
+padding:10px;
+cursor:pointer;
+}
+
+#nav ul li a{
+text-decoration:none;
+}
+
+#nav ul li:hover{
+background-color:#111;
+transition:0.5s ;
+}
+
+.active{
+background-color:#111;
+}
+
+#main{
+float:left;
+width:81%;
+background-color:inherit;
+height:100%;
+color:black;
+padding:15px;
+display:inline-block;
+position:relative;
+margin-left:18%;
+transition: margin-left .5s;
+}
+
+.hamburger{
+width:50px;
+text-align:center;
+font-size:18px;
+font-weight:bold;
+color:white;
+cursor:pointer;
+padding:12px;
+margin-left:30px;
+visibility:visible;
+}
+
+.fa-bars{
+text-align:center;
+font-size:18px;
+font-weight:bold;
+vertical-align:middle;
+cursor:pointer;
+}
+
+#main p{
+font-size:0.85em;
+}
+
+#stats{
+display:inline-block;
+width:100%;
+margin-top:100px;
+}
+
+
+#stats2{
+display:inline-block;
+width:100%;
+margin-top:20px;
+}
+
+.acme{
+	padding:10px;
+}
+
+.stats_box{
+border-radius:2px;
+float:left;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	margin-left:75px;
+
+}
+
+
+.divider1{
+width:90px;
+text-align:center;
+background-color:#00c0ef;
+float:left;
+font-size:45px;
+height:90px;
+display:block;
+border-radius:2px 0px 0px 2px;
+line-height:90px;
+color:white;
+}
+
+.divider2{
+width:90px;
+text-align:center;
+background-color:#00a65a;
+float:left;
+font-size:45px;
+height:90px;
+display:block;
+border-radius:2px 0px 0px 2px;
+line-height:90px;
+color:white;
+}
+
+.divider3{
+width:90px;
+text-align:center;
+background-color:#f39c12;
+float:left;
+font-size:45px;
+height:90px;
+display:block;
+border-radius:2px 0px 0px 2px;
+line-height:90px;
+color:white;
+}
+
+.divider4{
+width:90px;
+text-align:center;
+background-color:#D81B60;
+float:left;
+font-size:45px;
+height:90px;
+display:block;
+border-radius:2px 0px 0px 2px;
+line-height:90px;
+color:white;
+}
+
+.orders{
+background-color:white;
+padding:10px;
+}
+
+
+.stats_content{
+display:block;
+padding:5px;
+margin-left:95px;
+text-transform:uppercase;
+font-size:14px;
+}
+
+.stats_content2{
+display:block;
+padding:5px;
+text-transform:lowercase;
+font-size:18px;
+margin-left:95px;
+font-weight:bold;
+margin-left:95px;
+}
