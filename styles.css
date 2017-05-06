@@ -305,7 +305,16 @@ overflow-x:hidden;
 	color:#CCCDCF;
 }
 
+.nav-text2{
+	color:#CCCDCF;
+	text-align:center;
+}
+
 .nav-text:hover{
+	color:white;
+}
+
+.nav-text2:hover{
 	color:white;
 }
 
