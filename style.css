@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+	background-color:white;
+	border:0px;
+}
+
+.logo{
+	float:left;
+}
+
+.navbar-brand{
+	font-size:32px;
+	color:black;
+}
+
+.logo-block{
+	width:100px;
+	height:auto;
+}
+
+.container-fluid :hover{
+	color:black;
+}
+
+.navbar-inverse .navbar-brand {
+    color: black;
+}
+
+.navbar-user-text{
+	font-size:14px;
+	color:black;
+}
+
+.header{
+	text-align:center;
+	margin:50px 80px 20px 80px;
+
+	
+
+}
+
+.header-text{
+	text-align:center;
+}
+
+.header-title{
+	font-size:60px;
+	font-weight:normal;
+	font-family: 'Poppins';
+}
+
+.project-box{
+	border:1px solid #CDD0D1;
+	text-align:center;
+	border-radius:5px;
+	padding:80px;
+	margin:5px;
+	cursor:pointer;
+}
+
+.card :hover{
+	background-color:#80CEE8;
+	color:white;
+}
+
+.project-box2{
+	text-align:center;
+	border:1px solid #CDD0D1;
+	border-radius:5px;
+	padding:80px;
+	margin:5px;
+	border-style:dashed;
+	cursor:pointer;
+}
+
+.project-title{
+	font-size:30px;
+	font-weight:900;
+}
+
+.project-title2{
+	font-size:16px;
+}
+
+.padded{
+	padding:20px 150px 20px 150px;
+}
