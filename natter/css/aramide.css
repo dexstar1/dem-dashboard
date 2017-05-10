@@ -1,0 +1,24 @@
+.bordered-hor{
+    border-left: 1px solid #798dee;
+    border-right: 1px solid #798dee;
+}
+.bordered-left{
+   
+    border-left: 1px solid #798dee;
+}
+.bg-white{
+    background-color: white;
+}
+.pad-hor{
+    padding-left:20px;
+    padding-right:20px;
+}
+.bg-dark{
+    background-color: rgb(37, 40, 55);
+}
+.mar-left{
+    margin-left:50px;
+}
+.mar-right{
+    margin-right:20px;
+}
