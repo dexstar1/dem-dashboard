@@ -11,6 +11,21 @@
     <link rel="stylesheet" href="../natter/css/vendor.css"/>
     <!-- Application styles-->
     <link rel="stylesheet" href="../natter/css/app.css">
+    <style>
+    #active{
+    background-color:rgba(162, 162, 162, .09); 
+    }
+      .mylabelthing2{
+      position: relative;
+      top:15px;
+      padding: 5px 3px;
+    }
+    .mylabelthing{
+      position: relative;
+      top:10px;
+      padding: 5px 3px;
+    }
+    </style>
   </head>
   <body class="theme-1">
     <div class="layout-container">
@@ -33,6 +48,7 @@
      
           <ul class="pull-right">
             <li><a id="header-search" href="#" class="ripple"><em class="ion-ios-search-strong"></em></a></li>
+            <li><a id="header-search" href="wallet.html" class="ripple"> Current Wallet Balance  <b>$782.<sup>89</sup></b> </a></li>
             <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle has-badge ripple"><em class="ion-person"></em><sup class="badge bg-danger">3</sup></a>
               <ul class="dropdown-menu dropdown-menu-right md-dropdown-menu">
                 <li><a href="profile.html"><em class="ion-home icon-fw"></em>Profile</a></li>
@@ -46,7 +62,7 @@
         </nav>
       </header>
       <!-- sidebar-->
-      <aside class="sidebar-container">
+      <aside class="sidebar-container" >
         <div class="sidebar-header">
           <div class="pull-right pt-lg text-muted hidden"><em class="ion-close-round"></em></div><a href="#" class="sidebar-header-logo">
               <img src="../natter/img/logo.png" data-svg-replace="../natter/img/logo.svg" alt="Logo"><span class="sidebar-header-logo-text">NatterTech</span></a>
@@ -59,19 +75,10 @@
             <ul>
               <li><a href="index.html" class="ripple">
                   <em class="ion-ios-color-filter icon-lg"></em> <span style="font-size:1.1em; margin-left:15px;">Projects</span></a></li>
-              <li><a href="#" class="ripple">
-                  <em class="ion-ios-pulse-strong icon-lg"></em>
-                  <span class="pull-right nav-caret"> 
-                  </span><span class="pull-right nav-label"></span><span style="font-size:1.1em; margin-left:15px;">Activities</span><span class="md-ripple"></span></a>
-                <ul class="sidebar-subnav">
-                  <li><a href="activity.html" class="ripple"><span class="pull-right nav-label"></span><span>Web Work</span><span class="md-ripple"></span></a></li>
-                  <li><a href="activity.html" class="ripple"><span class="pull-right nav-label"></span><span>Mobile GUI</span><span class="md-ripple"></span></a></li>
-                  <li><a href="activity.html" class="ripple"><span class="pull-right nav-label"></span><span>App Onboarding</span><span class="md-ripple"></span></a></li>
-                </ul>
-              </li>
-          <li><a href="index.html" class="ripple"><em class="ion-android-contacts icon-lg"></em>
-                  
-                     <span style="font-size:1.1em; margin-left:15px;"> Developers</span></a></li>
+         
+          <li><a href="wallet.html" class="ripple"><em class="ion-cash icon-lg"></em>
+                  <span class="label label-rounded label-success pull-right mylabelthing2"><b>$782.<sup>89</sup></b></span>
+                     <span style="font-size:1.1em; margin-left:15px;"> Wallet  </span></a></li>
     <li><a href="index.html" class="ripple">
                   <em class="ion-android-mail icon-lg"></em> <span style="font-size:1.1em; margin-left:15px;">Messages</span></a></li>
  <li><a href="index.html" class="ripple">
@@ -84,130 +91,236 @@
       <!-- Main section-->
       <main class="main-container" style="margin-left: 240px;">
 
- <section>
-          <div class="container container-fluid">
-            <div class="row mv">
-           
-              <div class="col-sm-8 text-right hidden-xs">
-                <form class="form-inline">
-                  <div class="form-group mr">
-                    <label class="mr"><small>Status</small></label>
-                    <select class="form-control input-sm">
-                      <option>Completed</option>
-                      <option>Active</option>
-                      <option>Paused</option>
-                      <option>Canceled</option>
-                    </select>
+<div class="col-md-4" style="padding:0; border-right: 1px solid rgba(44, 47, 64,.09);">
+   <div class="content-heading bg-white">
+            <div class="row">
+              <div class="col-sm-9">
+                <h4 class="m0 text-md">Projects  
+                 <button   type="button" class="btn btn-labeled btn-default ripple">Add<span class="btn-label btn-label-right"><i class="ion-plus-round"></i></span><span class="md-ripple"></span></button>
+             </h4>
+              </div>
+            </div>
+          </div>
+       <div class="card" style="border-radius:0px; height:540px">
+              
+                  <div class="mda-list mda-list-bordered">
+                  <div onclick="location.href='#';" style="cursor: pointer;" class="mda-list-item" id="active">
+                       <div class="mda-list-item-icon bg-success"><em class="ion-ios-checkmark-outline icon-lg"></em></div>
+                       <label class="label label-lg pull-right label-success mylabelthing">Completed</label>
+                  <div class="mda-list-item-text mda-2-line">
+                        <h3>Sample Project</h3>
+                      <div class="progress">
+                      <div role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;" class="progress-bar">100%</div>
+                    </div>
+                      </div>
+                    </div> 
+                <div onclick="location.href='#';" style="cursor: pointer;" class="mda-list-item">
+                      <div class="mda-list-item-icon bg-primary"><em class="ion-load-a icon-lg"></em></div>
+                      <label class="label label-lg pull-right label-primary mylabelthing">On Schedule</label>
+                      <div class="mda-list-item-text mda-2-line">
+                        
+                        <h3>Web Work</h3>
+                       <div class="progress">
+                      <div role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;" class="progress-bar">40%</div>
+                    </div>
+                      </div>
+                    </div>
+                    <div onclick="location.href='#';" style="cursor: pointer;" class="mda-list-item">
+                      <div class="mda-list-item-icon bg-danger"><em class="ion-ios-close-outline icon-lg"></em></div>
+                      <label class="label label-lg pull-right label-danger mylabelthing">Cancelled</label>
+                      <div class="mda-list-item-text mda-2-line">
+                        <h3>Mobile UX</h3>
+                       <div class="progress">
+                      <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;" class="progress-bar">0%</div>
+                    </div>
+                      </div>
+                    </div>
+                   
+                   
                   </div>
-                  <div class="form-group">
-                    <label class="mr"><small>Sort by</small></label>
-                    <select class="form-control input-sm">
-                      <option>Name</option>
-                      <option>Status</option>
-                      <option>Start Date</option>
-                      <option>Finish Date</option>
-                    </select>
+                </div>
+  </div>
+
+
+  <div class="col-md-8" style="padding:0px; ">
+   <div class="content-heading bg-white">
+            <div class="row">
+              <div class="col-sm-9">
+                <h4 class=" text-md" style="margin:1.7px 0px;">Sample Project <small class="text-muted">40%</small>
+              </div>
+               
+            </div>
+          </div>
+
+          <section >
+          <ul id="myTabs" role="tablist" class="nav nav-tabs nav-justified">
+            <li role="presentation" class="active"><a id="home-tab" href="#home" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Test Cases/Modules</a></li>
+            <li role="presentation"><a id="profile-tab" href="#profile" role="tab" data-toggle="tab" aria-controls="profile">Details</a></li>
+            <li role="presentation" class="dropdown"><a id="profile-tab" href="#messages" role="tab" data-toggle="tab" aria-controls="messages">Files</a></li>
+          </ul>
+          <div id="myTabContent" class="tab-content text-center " style="padding: 0px; background-color: #fff;">
+            <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade in active"  style="padding: 0px; background-color: #fff;">
+              <div class="col-sm-6 col-xs-12">
+                    <div class="card">
+                      <div class="card-heading bg-success">
+                        <div class="card-title">Module Name</div>
+                      </div>
+                    
+                    
+                      <div class="card-body pt5">
+ <label class="label label-lg   label-success  ">Completed</label>
+                        <p class="mb-sm mt10">Module Description Cras rutrum scelerisque auctor. Donec ultricies blandit venenatis. Nulla facilisi. Praesent diam diam, venenatis lorem par.</p>
+                      </div>
+                      <div class="card-footer">
+                        <button type="button" class="btn btn-flat btn-default">Report</button>
+                        <button type="button" class="btn btn-flat btn-default">Approve</button>
+                      </div>
+                    </div>
                   </div>
-                </form>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="card">
+                      <div class="card-heading bg-warning">
+                        <div class="card-title">Module Name</div>
+                      </div>
+                    
+                    
+                      <div class="card-body pt5">
+ <label class="label label-lg   label-warning  ">Late</label>
+                        <p class="mb-sm mt10">Module Description Cras rutrum scelerisque auctor. Donec ultricies blandit venenatis. Nulla facilisi. Praesent diam diam, venenatis lorem par.</p>
+                      </div>
+                      <div class="card-footer">
+                        <button type="button" class="btn btn-flat btn-default">Report</button>
+                        <button type="button" class="btn btn-flat btn-default">Approve</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="card">
+                      <div class="card-heading bg-primary">
+                        <div class="card-title">Module Name</div>
+                      </div>
+                    
+                    
+                      <div class="card-body pt5">
+ <label class="label label-lg   label-primary  ">On Schedule</label>
+                        <p class="mb-sm mt10">Module Description Cras rutrum scelerisque auctor. Donec ultricies blandit venenatis. Nulla facilisi. Praesent diam diam, venenatis lorem par.</p>
+                      </div>
+                      <div class="card-footer">
+                        <button type="button" class="btn btn-flat btn-default">Report</button>
+                        <button type="button" class="btn btn-flat btn-default">Approve</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="card">
+                      <div class="card-heading bg-danger">
+                        <div class="card-title">Module Name</div>
+                      </div>
+                    
+                    
+                      <div class="card-body pt5">
+ <label class="label label-lg   label-danger  ">Rejected</label>
+                        <p class="mb-sm mt10">Module Description Cras rutrum scelerisque auctor. Donec ultricies blandit venenatis. Nulla facilisi. Praesent diam diam, venenatis lorem par.</p>
+                      </div>
+                      <div class="card-footer">
+                        <button type="button" class="btn btn-flat btn-default">Report</button>
+                        <button type="button" class="btn btn-flat btn-default">Approve</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade bg-white" style="padding: 0px; border:0px;">
+
+            <div class="card" style="margin: 0px;">
+               
+              <div class="card-body pt10">
+                 <label class="label label-lg pull-right label-success mylabelthing">Completed</label>
+                <h3 class="mt0">Sample Project</h3>
+                <p>Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.</p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-flat btn-primary">Read More</button>
+                <button type="button" class="btn btn-flat btn-primary">Edit</button>
+                <button type="button" class="btn btn-flat btn-primary">Remove</button>
               </div>
             </div>
 
+
+            </div>
+            <div id="messages" role="tabpanel" aria-labelledby="messages-tab" class="tab-pane fade">
             <div class="row">
-                 <div class="col-md-8 col-md-offset-2">
-                     <div class="row">
-              <div class="col-md-4" style="padding:0 4px;  ">
-                <!-- Project card-->
-                <div class="card" style="border-top:4px solid #03A9F4; border-radius:10px;">
-                  <div class="card-heading">
-                    <div class="pull-right">
-                      <div class="label label-info">active</div>
-                    </div>
-                    <div class="card-title">Project #A</div><small>Web development</small>
-                  </div>
-                  <div class="card-body">
-                    <p><strong>Description:</strong></p>
-                    <div class="pl-lg mb-lg">Ut turpis urna, tristique sed adipiscing nec, luctus quis leo. Fusce nec volutpat ante.
-                        <a href="activity.html">More..</a>
-                    </div>
-                    <p><strong>Members:</strong></p>
-                    <div class="pl-lg mb-lg"><a href="#" class="inline"><img src="../natter/img//user/02.jpg" alt="project member" class="img-circle thumb32"></a><a href="#" class="inline"><img src="../natter/img//user/04.jpg" alt="project member" class="img-circle thumb32"></a><a href="#" class="inline"><img src="../natter/img//user/05.jpg" alt="project member" class="img-circle thumb32"></a><a href="#" class="inline"><img src="../natter/img//user/06.jpg" alt="project member" class="img-circle thumb32"></a></div>
-                    <a href="activity.html">View all 12 activities</a>
-                     
-                  </div>
-                  <div class="card-footer">
-                    <p><small>56%</small></p>
-                    <div class="progress progress-xs m0">
-                      <div style="width:56%" class="progress-bar progress-bar-info"></div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end Project card-->
+              <div class="col-lg-4 col-md-6">
+                <div class="card"><a href="img/pic4.jpg" data-gallery="" title="Unsplash images" class="card-item">
+                    <div class="card-item-image bg-pic4"></div>
+                    <div class="card-item-text bg-fade">
+                      <div class="clearfix">
+                        
+                        <h6 class="mv pull-right text-light">10:20</h6>
+                      </div>
+                    </div></a></div>
               </div>
-
-
-                <div class="col-md-4" style="padding:0 4px;  ">
-                <!-- Project card-->
-                <div class="card" style="border-top:4px solid #03A9F4; border-radius:10px;">
-                  <div class="card-heading">
-                    <div class="pull-right">
-                      <div class="label label-info">active</div>
-                    </div>
-                    <div class="card-title">Project #A</div><small>Web development</small>
-                  </div>
-                  <div class="card-body">
-                    <p><strong>Description:</strong></p>
-                    <div class="pl-lg mb-lg">Ut turpis urna, tristique sed adipiscing nec, luctus quis leo. Fusce nec volutpat ante.
-                        <a href="activity.html">More..</a>
-                    </div>
-                    <p><strong>Members:</strong></p>
-                    <div class="pl-lg mb-lg"><a href="#" class="inline"><img src="../natter/img//user/02.jpg" alt="project member" class="img-circle thumb32"></a><a href="#" class="inline"><img src="../natter/img//user/04.jpg" alt="project member" class="img-circle thumb32"></a><a href="#" class="inline"><img src="../natter/img//user/05.jpg" alt="project member" class="img-circle thumb32"></a><a href="#" class="inline"><img src="../natter/img//user/06.jpg" alt="project member" class="img-circle thumb32"></a></div>
-                    <a href="activity.html">View all 12 activities</a>
-                     
-                  </div>
-                  <div class="card-footer">
-                    <p><small>56%</small></p>
-                    <div class="progress progress-xs m0">
-                      <div style="width:56%" class="progress-bar progress-bar-info"></div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end Project card-->
+              <div class="col-lg-4 col-md-6">
+                <div class="card"><a href="img/pic1.jpg" data-gallery="" title="Unsplash images" class="card-item">
+                    <div class="card-item-image bg-pic1"></div>
+                    <div class="card-item-text bg-fade">
+                      <div class="clearfix">
+                        
+                        <h6 class="mv pull-right text-light">10:20</h6>
+                      </div>
+                    </div></a></div>
               </div>
-
-                <div class="col-md-4" style="padding:0 4px;  ">
-                <!-- Project card-->
-                <div class="card" style="border-top:4px solid #03A9F4; border-radius:10px;">
-                  <div class="card-heading">
-                    <div class="pull-right">
-                      <div class="label label-info">active</div>
-                    </div>
-                    <div class="card-title">Project #A</div><small>Web development</small>
-                  </div>
-                  <div class="card-body">
-                    <p><strong>Description:</strong></p>
-                    <div class="pl-lg mb-lg">Ut turpis urna, tristique sed adipiscing nec, luctus quis leo. Fusce nec volutpat ante.
-                        <a href="activity.html">More..</a>
-                    </div>
-                    <p><strong>Members:</strong></p>
-                    <div class="pl-lg mb-lg"><a href="#" class="inline"><img src="../natter/img//user/02.jpg" alt="project member" class="img-circle thumb32"></a><a href="#" class="inline"><img src="../natter/img//user/04.jpg" alt="project member" class="img-circle thumb32"></a><a href="#" class="inline"><img src="../natter/img//user/05.jpg" alt="project member" class="img-circle thumb32"></a><a href="#" class="inline"><img src="../natter/img//user/06.jpg" alt="project member" class="img-circle thumb32"></a></div>
-                    <a href="activity.html">View all 12 activities</a>
-                     
-                  </div>
-                  <div class="card-footer">
-                    <p><small>56%</small></p>
-                    <div class="progress progress-xs m0">
-                      <div style="width:56%" class="progress-bar progress-bar-info"></div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end Project card-->
+              <div class="col-lg-4 col-md-6">
+                <div class="card"><a href="img/pic5.jpg" data-gallery="" title="Unsplash images" class="card-item">
+                    <div class="card-item-image bg-pic5"></div>
+                    <div class="card-item-text bg-fade">
+                      <div class="clearfix">
+                        
+                        <h6 class="mv pull-right text-light">10:20</h6>
+                      </div>
+                    </div></a></div>
               </div>
-             </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="card"><a href="img/pic3.jpg" data-gallery="" title="Unsplash images" class="card-item">
+                    <div class="card-item-image bg-pic3"></div>
+                    <div class="card-item-text bg-fade">
+                      <div class="clearfix">
+                        
+                        <h6 class="mv pull-right text-light">10:20</h6>
+                      </div>
+                    </div></a></div>
               </div>
-             
+              <div class="col-lg-4 col-md-6">
+                <div class="card"><a href="img/pic6.jpg" data-gallery="" title="Unsplash images" class="card-item">
+                    <div class="card-item-image bg-pic6"></div>
+                    <div class="card-item-text bg-fade">
+                      <div class="clearfix">
+                        
+                        <h6 class="mv pull-right text-light">10:20</h6>
+                      </div>
+                    </div></a></div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="card"><a href="img/pic2.jpg" data-gallery="" title="Unsplash images" class="card-item">
+                    <div class="card-item-image bg-pic2"></div>
+                    <div class="card-item-text bg-fade">
+                      <div class="clearfix">
+                        
+                        <h6 class="mv pull-right text-light">10:20</h6>
+                      </div>
+                    </div></a></div>
+              </div>
+       
+            </div>
             </div>
           </div>
         </section>
+
+
+          
+  </div>
+
+
      </main>
     <!-- Google Maps API-->
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBNs42Rt_CyxAqdbIBK0a5Ut83QiauESPA"></script>
